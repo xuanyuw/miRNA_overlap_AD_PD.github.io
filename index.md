@@ -133,10 +133,10 @@ The volcano plots below are plotted for each biofluid and each disease, yielding
 ![volcano plot](img/volcano.png)
 
 The single volcano plot below is a specific look at the volcano plot for Alzheimer's patients in the serum biofluid. The labels next to the points are the names of the miRNA that are differentially expressed. We then used these names to map the differentially expressed miRNA to the specific target mRNA that they affected the expression of. From there, we inspected the responsibilities of those mRNA and how they are correlated with the development of Parkinson's or Alzheimer's 
-![volcano plot of Alz/serum] (img/volcano_details.png)
+![volcano plot of Alz/serum](img/volcano_details.png)
 
 Shown below is the Venn diagram we created that shows the differentially expressed miRNA that were common to both Alzheimer's and Parkinson's patients. Finding these overlapping miRNA is one of the core objectives of our project, and can lead to exploration of how these miRNA lead to mental health problems, as well as shared treatments that can target the causes of both Alzheimer's and Parkinson's patients.
-![volcano plot of Alz/serum] (img/venn.png)
+![volcano plot of Alz/serum](img/venn.png)
 
 ## References
 
