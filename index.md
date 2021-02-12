@@ -1,5 +1,8 @@
 # Genetic Overlap between Alzheimer's, Parkinson’s, and healthy patients
 
+
+Project Repo: https://github.com/sksamra/miRNA_overlap_between_AD_PD
+
 ## Project Goal
 
 Our research goal is to compare overlapping patterns in miRNA between the diseases and be able to pinpoint any important transcription factors that they share. These shared transcription factors will help future researchers to leverage that factor in order to better understand the disorders and potentially help to predict it.
@@ -101,7 +104,7 @@ The basic pipeline structure is shown in the figure below:
 The figure below shows our entire pipeline:
 ![pipeline](img/pipeline.png)
 
-### Quality checks
+## Quality checks
 
 To clean our raw sequence data, we first use cutadapt to cut out the adapter sequences, which is the noise produced by the sequencing machine. Then we double checked the quality of the sequence after cutadapt using FastQC.
 
@@ -120,3 +123,12 @@ FastQC is a tool that is used in checking the quality of raw sequencing data bef
     
 2. The fraction of reads that align to the host genome (after filtering out contaminants, adaptor dimers and ribosomal reads) that also align to any annotated RNA transcript (described in point #1) should be greater than 0.5.
 </details>
+
+## Results
+
+WIP
+
+## References
+
+WIP
+
