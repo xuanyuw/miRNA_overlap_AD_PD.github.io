@@ -126,7 +126,17 @@ FastQC is a tool that is used in checking the quality of raw sequencing data bef
 
 ## Results
 
-WIP
+Below is a Spearman correlation plot of the differential expression results of the different disorders compared among themselves for the two biofluid regions (CSF, serum). Differential expression is measured by the value of the log fold change, which is calculated by DESeq2. DESeq2 quantifies the difference in gene expression between the disorder and control group for each comparison. As we can see in the image, the differentially expressed genes are very similar between the two diseases in their respective biofluids, based on the large and heavily red circles in the plot. However, they do not show as much similarity between the two biofluids. 
+![spearman correlation plot](img/corrmatrix.png)
+
+The volcano plots below are plotted for each biofluid and each disease, yielding a 2x2 visualization. The blue points for each plot are the down-regulated miRNA sequences, which means they are produced at lower amounts than the control group (healthy patients). If they are produced at lower amounts, this means that they suppress the expression of mRNA at lower amounts, and the proteins or transcription factors that those mRNA are responsible for encoding are produced at higher amounts. This is opposite for the red points, which are the up-regulated miRNA sequences. They are produced at higher amounts, so they regulate more of the expression of mRNA, and therefore the production of the proteins that those mRNA encode. 
+![volcano plot](img/volcano.png)
+
+The single volcano plot below is a specific look at the volcano plot for Alzheimer's patients in the serum biofluid. The labels next to the points are the names of the miRNA that are differentially expressed. We then used these names to map the differentially expressed miRNA to the specific target mRNA that they affected the expression of. From there, we inspected the responsibilities of those mRNA and how they are correlated with the development of Parkinson's or Alzheimer's 
+![volcano plot of Alz/serum] (img/volcano_details.png)
+
+Shown below is the Venn diagram we created that shows the differentially expressed miRNA that were common to both Alzheimer's and Parkinson's patients. Finding these overlapping miRNA is one of the core objectives of our project, and can lead to exploration of how these miRNA lead to mental health problems, as well as shared treatments that can target the causes of both Alzheimer's and Parkinson's patients.
+![volcano plot of Alz/serum] (img/venn.png)
 
 ## References
 
