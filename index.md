@@ -1,7 +1,7 @@
 # Genetic Overlap between Alzheimer's, Parkinson’s, and healthy patients
 
 
-Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://github.com/sksamra/miRNA_overlap_between_AD_PD).
+Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://github.com/sksamra/miRNA_overlap_between_AD_PD)
 
 ## Project Goal
 
