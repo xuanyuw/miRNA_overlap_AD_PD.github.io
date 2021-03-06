@@ -1,14 +1,34 @@
 Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://github.com/sksamra/miRNA_overlap_between_AD_PD)
 
-<a href="#anchor test"> Project Goal </a>
 
-<h2 id="anchor test"> Project Goal</h2>
+<body>
+  <p style="color:A2C3A5;"><strong> In this project, we identified 13 miRNAs that were shared between the diseases and between the biofluids. Among the proteins that relate to these miRNAs, five of them are commmon to both Alzheimer's disease (AD) and Parkinson's disease (PD) but have not been identified yet in existing studies. We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress in treatment of AD and PD can be made in order to target these proteins.</strong></p>
+</body>
+
+## Navagation Menu
+
+* <a href="#project goal"> Project Goal </a>
+
+* <a href="background"> Background </a>
+
+* <a href="eda"> EDA </a>
+
+* <a href="pipeline"> Pipeline </a>
+
+* <a href="results"> Results: Mappings </a>
+
+* <a href="conclusion"> Conclusion </a>
+
+* <a href="references"> References </a>
+
+
+<h2 id="project goal"> Project Goal</h2>
 
 Our research goal is to compare overlapping patterns in differentially expressed miRNA between Alzheimer's disease (AD) and Parkinson's disease (PD) and be able to pinpoint any important genes that they share (and the subsequent proteins those genes encode). Future researchers can then leverage this information to identify the affected biological pathways in order to better understand the disorders, and potentially help to predict and prevent them.
 
 Previous studies have attempted to investigate PD and AD using miRNA. Kasandra et al. profiled the miRNA from over 200 samples that are from both PD/AD patients and healthy subjects, but they mainly emphasized the differences between the miRNAs of PD and those of AD instead of the overlap [1]. Hewel et al. discussed the common miRNA between AD and PD, but their area of interest was the human gut metagenome [2]. Although they found a set of miRNAs that overlapped, the result may be restricted to only the gene expression for the regulation of the microbiome, instead of the cell-based pathological changes in brain tissue. Therefore, our investigation can potentially reveal the hidden link between PD and AD. 
 
-## Background
+<h2 id="background"> Background</h2>
 This study aims to find gene expression similarities and differences between patients of Alzheimer's (AD) and Parkinson's (PD). The study uses sequencing data from microRNA (miRNA) found in two the body's biofluids, cerebrospinal fluid (CSF) and blood serum (SER). Although these disorders are experienced by many people, little is known about what specifically causes the two diseases and how to prevent or cure them. The difficulty in finding these solutions arises from the complexity of the "pathomechanisms" underlying the diseases, as well as their tendencies to have early stages that are asymptomatic, making detection very challenging until symptoms set in [1].
 
 With our analysis, we aim to study the genetic causes underlying the two diseases by inspecting the sequencing data found in patients' bodies in the form of miRNA sequences. Uncovering the genetics behind the diseases can help researchers better their understanding of the development of AD and PD in humans and improve their chances of finding efficient preventative measures for the two disorders. Furthermore, the similarities that we may find between the disorders can aid in the research of neural disorders in general, and contribute to early diagnosis, prevention, and cures.
@@ -38,7 +58,7 @@ Our sequence data comes from the encodings of microRNA strands. microRNA (miRNA)
 The miRNA in our study was sourced from two locations (specifically, fluids found in our body): cerebrospinal fluid (CSF) and blood serum (SER). These two fluids are part of the central nervous system, which are highly impacted by both PD and AD. CSF cushions the brain and is a "shock absorber" for the central nervous system, and also removes waste products from the brain [6]. miRNAs can be found in the CSF and have been found to be instrumental in responding to malignant tumors in the nervous system [7]. Blood serum (or serum) is the fluid that blood cells move through, but without the plasma - it is the clear liquid that remains after blood clots [8]. miRNA is found in serum as "secreted miRNAs", meaning miRNA that has been excreted from cells or tissues [9].
 </details>
 
-## EDA
+<h2 id="eda"> EDA </h2>
 
 ### Experiments Features Table
 
@@ -95,7 +115,7 @@ The figures below shows the sample count distribution of each "disease markers" 
 
 In the figures above, we have found that some of the above features cannot clearly seperate out Alzheimer's and Parkinon's (sn_depigmentation and NIA-R) or Parkinson's and Control (Braak score), they did a good job at grossly seperate out at least one group. Therefore, we included the above features along with other basic informations in the above table in our model.
 
-## Pipeline
+<h2 id="pipeline"> Pipeline </h2>
 
 For this project, the basic overview of our pipeline is that we want to access our data, preform necessary quality checks (qc), then merge the inputs into a gene_matrix and feature table, normalize by outputting normalized counts, return the LRT plots in the analysis step, and then finally visualize.
 
@@ -105,7 +125,7 @@ The basic pipeline structure is shown in the figure below:
 The figure below shows our entire pipeline:
 ![pipeline](img/pipeline.png)
 
-## Quality Checks
+<h2 id="quality checks"> Quality Checks </h2>
 
 To clean our raw sequence data, we first use cutadapt to cut out the adapter sequences, which is the noise produced by the sequencing machine. Then we double checked the quality of the sequence after cutadapt using FastQC.
 
@@ -124,7 +144,7 @@ FastQC [16] is a tool that is used in checking the quality of raw sequencing dat
 &nbsp;&nbsp;&nbsp;2. The fraction of reads that align to the host genome (after filtering out contaminants, adaptor dimers and ribosomal reads) that also align to any annotated RNA transcript (described in point #1) should be greater than 0.5.
 </details>
 
-## Visualizations
+<h2 id="visualizations"> Visualizations </h2>
 
 Below is a Spearman correlation plot of the differential expression results of the different disorders compared among themselves for the two biofluid regions (CSF, serum). Differential expression is measured by the value of the log fold change, which is calculated by DESeq2. DESeq2 quantifies the difference in gene expression between the disorder and control group for each comparison. As we can see in the image, the differentially expressed genes are very similar between the two diseases in their respective biofluids, based on the large and heavily red circles in the plot. However, they do not show as much similarity between the two biofluids. 
 ![spearman correlation plot](img/corrmatrix.png)
@@ -138,7 +158,7 @@ The single volcano plot below is a specific look at the volcano plot for Alzheim
 Shown below is the Venn diagram we created that shows the differentially expressed miRNA that were common to both Alzheimer's and Parkinson's patients. Finding these overlapping miRNA is one of the core objectives of our project, and can lead to exploration of how these miRNA lead to mental health problems, as well as shared treatments that can target the causes of both Alzheimer's and Parkinson's patients.
 ![volcano plot of Alz/serum](img/venn.png)
 
-## Results: Mappings
+<h2 id="results">  Results: Mappings </h2>
 
 Equipped with the overlapping miRNA in the Venn diagram above, we mapped them to the mRNA that they suppress, and subsequently to the proteins that those mRNA encode. We found that the most relevant and significant proteins that were affected by the overlapping miRNA are pivotal in normal brain function. They are listed below with their responsibilities.
 
@@ -156,13 +176,13 @@ Equipped with the overlapping miRNA in the Venn diagram above, we mapped them to
 5. neuregulin 3
    * a group of signaling proteins that helps to oversee cellular functions of neuronal systems, like survival, proliferation, and differentiation of nerve cells [22]
 
-## Conclusion
+<h2 id="conclusion">  Conclusion </h2>
 
 Our goal for this study was to find genetic overlapping in Alzheimer's and Parkinson's in order to guide future research with key miRNA that are present in both diseases. We identified 13 up and down-regulated miRNAs in the CSF of Alzheimer's patients, 10 up and down-regulated miRNAs in the CSF of Parkinson's patients, 14 up and down-regulated miRNAs in the serum of Alzheimer's patients, and 22 up and down-regulated miRNAs in the serum of Parkinson's patients. From those, we identified 13 miRNAs that were shared between the diseases and between the biofluids. We mapped all the up-regulated, down-regulated and overlapping miRNAs to the top 3 target mRNAs that they are binding to (ranked in terms of the mRNA's (gene's) "Target Rank" and "Target Score"). As stated, however, these top 3 mRNAs are not necessarily relevant to our studies of brain disorders, so we also identified mRNAs that were tangentially related to neural functions. With careful analysis we discovered that the overlapping miRNA's were all up-regulated, meaning the miRNAs are restricting the amounts of target proteins that we found to be produced at lower amounts.
 
 We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress can be made in order to target these proteins to inhibit or lessen the effects of both Alzheimer's and Parkinson's Diseases.
 
-## References
+<h2 id="references">  References </h2>
 
 [1] Burgos, Kasandra, et al. “Profiles of Extracellular MiRNA in Cerebrospinal Fluid and Serum from Patients with Alzheimer's and Parkinson's Diseases Correlate with Disease Status and Features of Pathology.” PLOS One, vol. 9, no. 5, 5 May 2014, doi:10.1371/journal.pone.0094839. 
 
