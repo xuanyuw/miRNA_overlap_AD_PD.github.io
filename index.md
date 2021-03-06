@@ -118,7 +118,7 @@ In the figures above, we have found that some of the above features cannot clear
 For this project, the basic overview of our pipeline is that we want to access our data, preform necessary quality checks (qc), then merge the inputs into a gene_matrix and feature table, normalize by outputting normalized counts, return the LRT plots in the analysis step, and then finally visualize.
 
 The basic pipeline structure is shown in the figure below:
-![basic pipeline](img/basic_pipeline.png)
+![basic pipeline](img/basic_pipeline_new.png)
 
 The figure below shows our entire pipeline:
 ![pipeline](img/pipeline.png)
