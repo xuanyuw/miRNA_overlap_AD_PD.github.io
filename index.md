@@ -9,17 +9,17 @@ Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://g
 
 * <a href="#project goal"> Project Goal </a>
 
-* <a href="background"> Background </a>
+* <a href="#background"> Background </a>
 
-* <a href="eda"> EDA </a>
+* <a href="#eda"> EDA </a>
 
-* <a href="pipeline"> Pipeline </a>
+* <a href="#pipeline"> Pipeline </a>
 
-* <a href="results"> Results: Mappings </a>
+* <a href="#results"> Results: Mappings </a>
 
-* <a href="conclusion"> Conclusion </a>
+* <a href="#conclusion"> Conclusion </a>
 
-* <a href="references"> References </a>
+* <a href="#references"> References </a>
 
 
 <h2 id="project goal"> Project Goal</h2>
