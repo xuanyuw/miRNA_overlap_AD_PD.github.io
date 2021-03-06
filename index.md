@@ -1,9 +1,7 @@
 Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://github.com/sksamra/miRNA_overlap_between_AD_PD)
 
 
-<body>
-  <p style="color:#A2C3A5;"><strong> In this project, we identified 13 miRNAs that were shared between the diseases and between the biofluids. Among the proteins that relate to these miRNAs, five of them are commmon to both Alzheimer's disease (AD) and Parkinson's disease (PD) but have not been identified yet in existing studies. We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress in treatment of AD and PD can be made in order to target these proteins.</strong></p>
-</body>
+<h4>In this project, we identified 13 miRNAs that were shared between the diseases and between the biofluids. Among the proteins that relate to these miRNAs, five of them are commmon to both Alzheimer's disease (AD) and Parkinson's disease (PD) but have not been identified yet in existing studies. We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress in treatment of AD and PD can be made in order to target these proteins.</h4>
 
 ## Navagation Menu
 
