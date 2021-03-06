@@ -1,6 +1,8 @@
 Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://github.com/sksamra/miRNA_overlap_between_AD_PD)
 
-## Project Goal
+<a href="#anchor test"> Project Goal </a>
+
+<h2 id="anchor test"> Project Goal<h2>
 
 Our research goal is to compare overlapping patterns in differentially expressed miRNA between Alzheimer's disease (AD) and Parkinson's disease (PD) and be able to pinpoint any important genes that they share (and the subsequent proteins those genes encode). Future researchers can then leverage this information to identify the affected biological pathways in order to better understand the disorders, and potentially help to predict and prevent them.
 
