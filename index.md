@@ -1,9 +1,9 @@
 Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://github.com/sksamra/miRNA_overlap_between_AD_PD)
 
 
-<h4>In this project, we identified 13 miRNAs that were shared between the diseases and between the biofluids. Among the proteins that relate to these miRNAs, five of them are commmon to both Alzheimer's disease (AD) and Parkinson's disease (PD) but have not been identified yet in existing studies. We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress in treatment of AD and PD can be made in order to target these proteins.</h4>
+<h4>In this project, we identified 13 miRNAs that were shared between the diseases and between the biofluids. Among the proteins that relate to these miRNAs, five of them are common to both Alzheimer's disease (AD) and Parkinson's disease (PD) but have not been identified yet in pre-existing studies. We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress in treatment of AD and PD can be made in order to target these proteins.</h4>
 
-## Navagation Menu
+## Navigation Menu
 
 * <a href="#project goal"> Project Goal </a>
 
@@ -27,7 +27,7 @@ Our research goal is to compare overlapping patterns in differentially expressed
 Previous studies have attempted to investigate PD and AD using miRNA. Kasandra et al. profiled the miRNA from over 200 samples that are from both PD/AD patients and healthy subjects, but they mainly emphasized the differences between the miRNAs of PD and those of AD instead of the overlap [1]. Hewel et al. discussed the common miRNA between AD and PD, but their area of interest was the human gut metagenome [2]. Although they found a set of miRNAs that overlapped, the result may be restricted to only the gene expression for the regulation of the microbiome, instead of the cell-based pathological changes in brain tissue. Therefore, our investigation can potentially reveal the hidden link between PD and AD. 
 
 <h2 id="background"> Background</h2>
-This study aims to find gene expression similarities and differences between patients of Alzheimer's (AD) and Parkinson's (PD). The study uses sequencing data from microRNA (miRNA) found in two the body's biofluids, cerebrospinal fluid (CSF) and blood serum (SER). Although these disorders are experienced by many people, little is known about what specifically causes the two diseases and how to prevent or cure them. The difficulty in finding these solutions arises from the complexity of the "pathomechanisms" underlying the diseases, as well as their tendencies to have early stages that are asymptomatic, making detection very challenging until symptoms set in [1].
+This study aims to find gene expression similarities and differences between patients of Alzheimer's (AD) and Parkinson's (PD). The study uses sequencing data from microRNA (miRNA) found in two of the body's biofluids: cerebrospinal fluid (CSF) and blood serum (SER). Although these disorders are experienced by many people, little is known about what specifically causes the two diseases and how to prevent or cure them. The difficulty in finding these solutions arises from the complexity of the "pathomechanisms" underlying the diseases, as well as their tendencies to have early stages that are asymptomatic, making detection very challenging until symptoms set in [1].
 
 With our analysis, we aim to study the genetic causes underlying the two diseases by inspecting the sequencing data found in patients' bodies in the form of miRNA sequences. Uncovering the genetics behind the diseases can help researchers better their understanding of the development of AD and PD in humans and improve their chances of finding efficient preventative measures for the two disorders. Furthermore, the similarities that we may find between the disorders can aid in the research of neural disorders in general, and contribute to early diagnosis, prevention, and cures.
 
@@ -42,7 +42,7 @@ Alzheimer's disease is a progressive brain disorder that heavily impacts brain f
 
 <details>
 <summary><b>Parkinson's</b></summary>
-Parkinson's disease is a progress nervous system disorder that impacts movement. There are a myriad of symptoms that constitute PD, including a tremor (trembling) in a limb like a hand or fingers, slowed movement, rigid muscles, and impaired posture and balance. PD is also sometimes accompanies by other complications, like cognitive issues (trouble thinking, dementia), emotional changes (like depression), swallowing, chewing, and eating problems, among others. The principal risk factor of PD is age; PD usually develops in people age 60 or older. Other risk factors include family history and sex (men are more likely to develop it than women). As of now, there are no known cures or even prevention methods for Parkinson's. However, there are medications that can ease the symptoms, as well as surgeries that can regulate parts of the brain to improve symptoms. [4]
+Parkinson's disease is a progress nervous system disorder that impacts movement. There are a myriad of symptoms that constitute PD, including a tremor (trembling) in a limb like a hand or fingers, slowed movement, rigid muscles, and impaired posture and balance. PD is also sometimes accompanied by other complications, like cognitive issues (trouble thinking, dementia), emotional changes (like depression), swallowing, chewing, and eating problems, among others. The principal risk factor of PD is age; PD usually develops in people age 60 or older. Other risk factors include family history and sex (men are more likely to develop it than women). As of now, there are no known cures or even prevention methods for Parkinson's. However, there are medications that can ease the symptoms, as well as surgeries that can regulate parts of the brain to improve symptoms. [4]
 <br>
 </details>
 </details>
@@ -81,7 +81,7 @@ Here are the features we used in out analysis from the data:
 
 By inspecting these features, specifically performing EDA and doing research on what each of the values mean, we can delve further into the analysis by determining what features will be important in the differential gene analysis model, and which of them will significantly differentiate between Alzheimer's, Parkinson's and healthy patients in terms of their genetics.
 
-The figures below shows the sample count distribution of each "disease markers" mentioned above.
+The figures below show the sample count distribution of each "disease marker" mentioned above.
 <style>
 .row {
   display: flex;
@@ -111,7 +111,7 @@ The figures below shows the sample count distribution of each "disease markers" 
 </div>
 
 
-In the figures above, we have found that some of the above features cannot clearly seperate out Alzheimer's and Parkinon's (sn_depigmentation and NIA-R) or Parkinson's and Control (Braak score), they did a good job at grossly seperate out at least one group. Therefore, we included the above features along with other basic informations in the above table in our model.
+In the figures above, we have found that some of the above features cannot clearly separate out Alzheimer's and Parkinon's (sn_depigmentation and NIA-R) or Parkinson's and Control (Braak score), they did a good job at grossly separating out at least one group. Therefore, we included the above features along with other basic informations in the above table in our model.
 
 <h2 id="pipeline"> Pipeline </h2>
 
