@@ -102,7 +102,7 @@ The basic pipeline structure is shown in the figure below:
 The figure below shows our entire pipeline:
 ![pipeline](img/pipeline.png)
 
-## Quality checks
+## Quality Checks
 
 To clean our raw sequence data, we first use cutadapt to cut out the adapter sequences, which is the noise produced by the sequencing machine. Then we double checked the quality of the sequence after cutadapt using FastQC.
 
@@ -138,6 +138,27 @@ Shown below is the Venn diagram we created that shows the differentially express
 
 ## Results: Mappings
 
+Equipped with the overlapping miRNA in the Venn diagram above, we mapped them to the mRNA that they suppress, and subsequently to the proteins that those mRNA encode. We found that the most relevant and significant proteins that were affected by the overlapping miRNA are pivotal in normal brain function. They are listed below with their responsibilities.
+
+1. neurofilament medium
+   * The neurofilament protein is used by cells to mark neurons that are damaged
+   * If this system is affected, there would be no way to distinguish between working and damaged neurons, gravely affecting neuronal activity [18]
+2. neuroplastin
+   * Neuroplastin is a protein that is important in neuron and synaptic function
+   * They are significant in the process of cells communicating with each other [19]
+3. neurocalcin delta
+   * A decrease in this protein has been shown to protect against spinal muscular atrophy, a symptom related to Parkinson's 
+   * Has been linked with the neurons in the hippocampus of adults, the part of the brain responsible for memory [20]
+4. brain derived neurotrophic factor
+   * BDNF protein is largely responsible for promoting the growth of and dealing with the maintenance of nerve cells [21]
+5. neuregulin 3
+   * a group of signaling proteins that helps to oversee cellular functions of neuronal systems, like survival, proliferation, and differentiation of nerve cells [22]
+
+## Conclusion
+
+Our goal for this study was to find genetic overlapping in Alzheimer's and Parkinson's in order to guide future research with key miRNA that are present in both diseases. We identified 13 up and down-regulated miRNAs in the CSF of Alzheimer's patients, 10 up and down-regulated miRNAs in the CSF of Parkinson's patients, 14 up and down-regulated miRNAs in the serum of Alzheimer's patients, and 22 up and down-regulated miRNAs in the serum of Parkinson's patients. From those, we identified 13 miRNAs that were shared between the diseases and between the biofluids. We mapped all the up-regulated, down-regulated and overlapping miRNAs to the top 3 target mRNAs that they are binding to (ranked in terms of the mRNA's (gene's) "Target Rank" and "Target Score"). As stated, however, these top 3 mRNAs are not necessarily relevant to our studies of brain disorders, so we also identified mRNAs that were tangentially related to neural functions. With careful analysis we discovered that the overlapping miRNA's were all up-regulated, meaning the miRNAs are restricting the amounts of target proteins that we found to be produced at lower amounts.
+
+We hope that these significant proteins that we found as genetically overlapped in the cerebrospinal and serum biofluid regions will help future researchers and scientists to gain a better understanding at how these two diseases are linked and that future progress can be made in order to target these proteins to inhibit or lessen the effects of both Alzheimer's and Parkinson's Diseases.
 
 ## References
 
@@ -159,15 +180,15 @@ Shown below is the Venn diagram we created that shows the differentially express
 
 [9] “Analysis of Circulating MiRNA in Plasma or Serum.” 3D-Gene, www.3d-gene.com/en/products/dna/dna_004.html#: 
 
-[10] Smith, Yolanda. “Alzheimer's Tangles and Plaques: What's the Difference?” News - Medical, Life Sciences, 26 Feb. 2019, www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx. 
+[10] Smith, Yolanda. “Alzheimer's Tangles and Plaques: What's the Difference?” Medical News, 26 Feb. 2019, www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx. 
 
-[11] Burke, Robert E, et al. “A Critical Evaluation of The Braak Staging Scheme for Parkinson’s Disease.” Ann Neurol, vol. 64, no. 5, 1 Nov. 2009, doi:10.1002/ana.21541. 
+[11] Burke, Robert E, et al. “A Critical Evaluation of The Braak Staging Scheme for Parkinson’s Disease.” Annals of Neurology, vol. 64, no. 5, 1 Nov. 2009, doi:10.1002/ana.21541. 
 
 [12] “What Is Lewy Body Dementia?” National Institute on Aging, U.S. Department of Health and Human Services, www.nia.nih.gov/health/what-lewy-body-dementia. 
 
-[13] Hack, Nawaz, et al. "Substantia nigra depigmentation and exposure to encephalitis lethargica." Ann Neurol, vol. 76, no. 6, 1 Dec. 2013, doi:10.1002/ana.23697.
+[13] Hack, Nawaz, et al. "Substantia nigra depigmentation and exposure to encephalitis lethargica." Annals of Neurology, vol. 76, no. 6, 1 Dec. 2013, doi:10.1002/ana.23697.
 
-[14] Bennett DA, et al. "Neuropathology of older persons without cognitive impairment from two community-based studies". Neurology, vol. 66, no. 12, 27 Jun 2006, doi: 10.1212/01.wnl.0000219668.47116.e6.
+[14] Bennett, D A, et al. "Neuropathology of older persons without cognitive impairment from two community-based studies". Neurology, vol. 66, no. 12, 27 Jun 2006, doi: 10.1212/01.wnl.0000219668.47116.e6.
 
 [15] Martin, Marcel. “Cutadapt Removes Adapter Sequences from High-Throughput Sequencing Reads.” EMBnet.journal, journal.embnet.org/index.php/embnetjournal/article/view/200/479. 
 
@@ -175,3 +196,12 @@ Shown below is the Venn diagram we created that shows the differentially express
 
 [17] “Data Quality Control Standards.” ExRNA Research Portal, exrna.org/resources/data/data-quality-control-standards/. 
 
+[18] "NEFM neurofilament medium." National Center for Biotechnology Information (NCBI), https://www.ncbi.nlm.nih.gov/gene/4741.
+
+[19] Beesley, Philip W, et al. "The Neuroplastin adhesion molecules: key regulators of neuronal plasticity and synaptic function". Journal of Neurochemistry, vol. 131, no. 3, 14 Aug. 2014, doi: 10.1111/jnc.12816.
+
+[20] Upadhyay, Aaradhita, et al. "Neurocalcin Delta Knockout Impairs Adult Neurogenesis Whereas Half Reduction Is Not Pathological". Frontiers in Molecular Neuroscience, vol. 12, no. 19, 12 Feb. 2019, doi: 10.3389/fnmol.2019.00019.
+
+[21] "BDNF gene." MedlinePlus, https://medlineplus.gov/genetics/gene/bdnf/#:.
+
+[22] Seroogy, Kim B, et al. "Neuregulins". Handbook of Biologically Active Peptides (Second Edition), 2013. 
