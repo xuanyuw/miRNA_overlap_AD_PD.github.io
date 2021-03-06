@@ -2,14 +2,14 @@ Project Repo: [https://github.com/sksamra/miRNA_overlap_between_AD_PD](https://g
 
 ## Project Goal
 
-Our research goal is to compare overlapping patterns in miRNA between the diseases and be able to pinpoint any important transcription factors that they share. These shared transcription factors will help future researchers to leverage that factor in order to better understand the disorders and potentially help to predict it.
+Our research goal is to compare overlapping patterns in differentially expressed miRNA between Alzheimer's disease (AD) and Parkinson's disease (PD) and be able to pinpoint any important genes that they share (and the subsequent proteins those genes encode). Future researchers can then leverage this information to identify the affected biological pathways in order to better understand the disorders, and potentially help to predict and prevent them.
 
-Previous studies had attempted to investigate PD and AD using miRNA. Kasandra et al. profiled the miRNA from over 200 samples that are from both PD/AD patients and healthy subjects, but they mainly emphasized the difference between miRNAs of PD and those of AD instead of the overlap. (Hewel, C. et al. 2019) discussed the common miRNA between AD and PD, but their area of interest was the human gut metagenome. Although they found a set of miRNAs that overlapped, the result may be restricted to only the expressions for the regulation of the microbiome instead of the cell-based pathological changes in brain tissue. Therefore, our investigation can potentially reveal the hidden link between PD and AD. 
+Previous studies have attempted to investigate PD and AD using miRNA. Kasandra et al. profiled the miRNA from over 200 samples that are from both PD/AD patients and healthy subjects, but they mainly emphasized the differences between the miRNAs of PD and those of AD instead of the overlap [1]. Hewel et al. discussed the common miRNA between AD and PD, but their area of interest was the human gut metagenome [2]. Although they found a set of miRNAs that overlapped, the result may be restricted to only the gene expression for the regulation of the microbiome, instead of the cell-based pathological changes in brain tissue. Therefore, our investigation can potentially reveal the hidden link between PD and AD. 
 
 ## Background
-This study aims to find gene expression similarities and differences between patients of Alzheimer's (AD) and Parkinson's (PD). The study uses sequencing data from microRNA (abbreviated miRNA) found in two the body's biofluids, cerebrospinal fluid (CSF) and blood serum (SER). Although these disorders are experienced by many people, little is known about what specifically causes the two diseases and how to prevent or cure them. The difficulty in finding these solutions arises from the complexity of the "pathomechanisms" underlying the diseases, as well as their tendencies to have early stages that are asymptomatic, making detection very challenging until symptoms set in [1].
+This study aims to find gene expression similarities and differences between patients of Alzheimer's (AD) and Parkinson's (PD). The study uses sequencing data from microRNA (miRNA) found in two the body's biofluids, cerebrospinal fluid (CSF) and blood serum (SER). Although these disorders are experienced by many people, little is known about what specifically causes the two diseases and how to prevent or cure them. The difficulty in finding these solutions arises from the complexity of the "pathomechanisms" underlying the diseases, as well as their tendencies to have early stages that are asymptomatic, making detection very challenging until symptoms set in [1].
 
-This is where our study comes into play. With our analysis, we aim to study the genetic causes underlying the two diseases by inspecting the sequencing data found in patients' bodies in the form of miRNA sequences. Uncovering the genetics behind the diseases can help researchers better their understanding of the development of AD and PD in humans and improve their chances of finding efficient preventative measures for the two disorders. Furthermore, the similarities that we may find between the disorders can aid in the research of neural disorders in general, and contribute to early diagnosis, prevention, and cures.
+With our analysis, we aim to study the genetic causes underlying the two diseases by inspecting the sequencing data found in patients' bodies in the form of miRNA sequences. Uncovering the genetics behind the diseases can help researchers better their understanding of the development of AD and PD in humans and improve their chances of finding efficient preventative measures for the two disorders. Furthermore, the similarities that we may find between the disorders can aid in the research of neural disorders in general, and contribute to early diagnosis, prevention, and cures.
 
 
 <details>
@@ -17,22 +17,23 @@ This is where our study comes into play. With our analysis, we aim to study the 
 <details>
 <summary><b>Alzheimer's</b></summary>
 <br>
-Alzheimer's disease is a progressive brain disorder that heavily impacts brain function in that it slowly deteriorates memory and thinking skills, leading to symptoms like forgetting recent events or conversations, to eventually losing the ability to carry out simple tasks or even recognize friends and family members. Difficulty in reasoning and thinking is also a common symptom, especially with abstract concepts like numbers, again making everyday tasks like paying bills challenging. AD also impairs people's abilities to make decisions in everyday situations, like driving. The principal risk factor of Alzheimer's is age; people become more likely to to develop AD as they grow older. Family history can also increase a person's chances of developing the disease. A genetic link to increased chance of AD shows in the form of a variation of the gene APOE e4, something we will definitely explore further in our study. As of now, there is no known cure for AD, but medications have been known to improve or slow the effect of the disease, and programs and caregivers help to support AD patients. [2]
+Alzheimer's disease is a progressive brain disorder that heavily impacts brain function in that it slowly deteriorates memory and thinking skills, leading to symptoms like forgetting recent events or conversations, to eventually losing the ability to carry out simple tasks or even recognize friends and family members. Difficulty in reasoning and thinking is also a common symptom, especially with abstract concepts like numbers, again making everyday tasks like paying bills challenging. AD also impairs people's abilities to make decisions in everyday situations, like driving. The principal risk factor of Alzheimer's is age; people become more likely to to develop AD as they grow older. Family history can also increase a person's chances of developing the disease. A genetic link to increased chance of AD shows in the form of a variation of the gene APOE e4, something we will definitely explore further in our study. As of now, there is no known cure for AD, but medications have been known to improve or slow the effect of the disease, and programs and caregivers help to support AD patients. [3]
 </details>
 
 <details>
 <summary><b>Parkinson's</b></summary>
 <br>
-Parkinson's disease is a progress nervous system disorder that impacts movement. There are a myriad of symptoms that constitute PD, including a tremor (trembling) in a limb like a hand or fingers, slowed movement, rigid muscles, and impaired posture and balance. PD is also sometimes accompanies by other complications, like cognitive issues (trouble thinking, dementia), emotional changes (like depression), swallowing, chewing, and eating problems, among others. The principal risk factor of PD is age; PD usually develops in people age 60 or older. Other risk factors include family history and sex (men are more likely to develop it than women). As of now, there are no known cures or even prevention methods for Parkinson's. However, there are medications that can ease the symptoms, as well as surgeries that can regulate parts of the brain to improve symptoms. [3]
+Parkinson's disease is a progress nervous system disorder that impacts movement. There are a myriad of symptoms that constitute PD, including a tremor (trembling) in a limb like a hand or fingers, slowed movement, rigid muscles, and impaired posture and balance. PD is also sometimes accompanies by other complications, like cognitive issues (trouble thinking, dementia), emotional changes (like depression), swallowing, chewing, and eating problems, among others. The principal risk factor of PD is age; PD usually develops in people age 60 or older. Other risk factors include family history and sex (men are more likely to develop it than women). As of now, there are no known cures or even prevention methods for Parkinson's. However, there are medications that can ease the symptoms, as well as surgeries that can regulate parts of the brain to improve symptoms. [4]
 </details>
 </details>
 
-<details><summary><p style="display:inline; font-size: 20px"><b>miRNA and CSF/SER</b></p></summary>
-Our sequence data comes from the encodings of microRNA strands. microRNA (miRNA) are a class of non-coding RNAs that regulate gene expression. Specifically, they bind to specific mRNA and prevent those target mRNA from translating the necessary directions to produce certain proteins. Because of the behavior of miRNA, it will be worthwhile to explore which miRNA are binding to which mRNA, and subsequently what proteins are being down-regulated (lowly expressed). These proteins could then be contributing factors to the symptoms and/or development of the two diseases. [4]
-
-The miRNA in our study was sourced from two locations (specifically, fluids found in our body): cerebrospinal fluid (CSF) and blood serum (SER). These two fluids are part of the central nervous system, which are highly impacted by both PD and AD. CSF cushions the brain and is a "shock absorber" for the central nervous system, and also removes waste products from the brain [5]. Blood serum (or serum) is the fluid that blood cells move through, but without the plasma - it is the clear liquid that remains after blood clots. [6] miRNA is found in serum as "secreted miRNAs", meaning miRNA that has been excreted from cells or tissues. [7]
+<details><summary><p style="display:inline; font-size: 20px"><b>miRNA</b></p></summary>
+Our sequence data comes from the encodings of microRNA strands. microRNA (miRNA) are a class of non-coding RNAs that regulate gene expression. Specifically, they bind to specific mRNA and prevent those target mRNA from translating the necessary directions to produce certain proteins. Because of the behavior of miRNA, it will be worthwhile to explore which miRNA are binding to which mRNA, and subsequently what proteins are being down-regulated (lowly expressed). These proteins could then be contributing factors to the symptoms and/or development of the two diseases [5].
 </details>
 
+<details><summary><p style="display:inline; font-size: 20px"><b>CSF/Serum</b></p></summary>
+The miRNA in our study was sourced from two locations (specifically, fluids found in our body): cerebrospinal fluid (CSF) and blood serum (SER). These two fluids are part of the central nervous system, which are highly impacted by both PD and AD. CSF cushions the brain and is a "shock absorber" for the central nervous system, and also removes waste products from the brain [6]. miRNAs can be found in the CSF and have been found to be instrumental in responding to malignant tumors in the nervous system [7]. Blood serum (or serum) is the fluid that blood cells move through, but without the plasma - it is the clear liquid that remains after blood clots [8]. miRNA is found in serum as "secreted miRNAs", meaning miRNA that has been excreted from cells or tissues [9].
+</details>
 
 ## EDA
 
@@ -49,12 +50,12 @@ Here are the features we used in out analysis from the data:
 |        sex       |                                                               Gender of the subject                                                              |
 |    expired_age   |                                                            Age of the subject at death                                                           |
 |        PMI       | Post-mortem interval, which means the amount of time between the subject's death and when the sample was collected from the body of the subject. |
-|    PlaqueTotal   |                                                             Total amount of [plaques](https://www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx).                                                             |
-|    TangleTotal   |                                                             Total amount of [tangles](https://www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx).                                                             |
-|    [Braak score](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2605160/)   |                  A score that is used to measure the degree of brain disfunction for both Alzheimer's and Parkinson's patients.                  |
-|     [LB Stage](https://www.nia.nih.gov/health/what-lewy-body-dementia)     |                                  The stage of lewy body dementia, which is often related to Parkinson's disease.                                 |
-| [sn_depigmentation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3660013/) |                                                         Substantia nigra depigmentation.                                                         |
-|[NIA_R](https://www.radc.rush.edu/docs/var/detail.htm;jsessionid=6669B3F472A33D97E802696844DC75CD?category=Pathology&subcategory=Alzheimer%27s+disease&variable=niareagansc)| A postmortem diagnosis of Alzheimer’s disease |
+|    PlaqueTotal   |                                                             Total amount of [plaques [10]](https://www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx).                                                             |
+|    TangleTotal   |                                                             Total amount of [tangles [10]](https://www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx).                                                             |
+|    [Braak score [11]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2605160/)   |                  A score that is used to measure the degree of brain disfunction for both Alzheimer's and Parkinson's patients.                  |
+|     [LB Stage [12]](https://www.nia.nih.gov/health/what-lewy-body-dementia)     |                                  The stage of lewy body dementia, which is often related to Parkinson's disease.                                 |
+| [sn_depigmentation [13]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3660013/) |                                                         Substantia nigra depigmentation.                                                         |
+|[NIA_R [14]](https://www.radc.rush.edu/docs/var/detail.htm;jsessionid=6669B3F472A33D97E802696844DC75CD?category=Pathology&subcategory=Alzheimer%27s+disease&variable=niareagansc)| A postmortem diagnosis of Alzheimer’s disease |
 
 
 By inspecting these features, specifically performing EDA and doing research on what each of the values mean, we can delve further into the analysis by determining what features will be important in the differential gene analysis model, and which of them will significantly differentiate between Alzheimer's, Parkinson's and healthy patients in terms of their genetics.
@@ -108,20 +109,20 @@ To clean our raw sequence data, we first use cutadapt to cut out the adapter seq
 <details>
 <summary><b>Cutadapt</b></summary>
 <br>
-Cutadapt is a tool that is used by geneticists to perform data cleaning on sequence data. When sequence libraries are prepared, the process adds adapter sequences called "primers" to the actual miRNA sequences. However, those types of sequences are not relevant to our analysis, and can actually negatively affect our data quality and our subsequent results. Therefore, the cutadapt tool removes those sequences, as well as any other low-quality reads so that data is ready for analysis. However, since the data provided to us was not the "raw" data, we could not evaluate the quality of the data itself, nor could we perform any quality control like performing cutadapt. The researchers who provided the data to us most likely already performed quality checks and used a tool like cutadapt in data cleaning. 
+Cutadapt [15] is a tool that is used by geneticists to perform data cleaning on sequence data. When sequence libraries are prepared, the process adds adapter sequences called "primers" to the actual miRNA sequences. However, those types of sequences are not relevant to our analysis, and can actually negatively affect our data quality and our subsequent results. Therefore, the cutadapt tool removes those sequences, as well as any other low-quality reads so that data is ready for analysis. However, since the data provided to us was not the "raw" data, we could not evaluate the quality of the data itself, nor could we perform any quality control like performing cutadapt. The researchers who provided the data to us most likely already performed quality checks and used a tool like cutadapt in data cleaning. 
 </details>
 
 <details>
 <summary><b>FastQC</b></summary>
 <br>
-FastQC is a tool that is used in checking the quality of raw sequencing data before performing large-scale analysis. The software tool calculates and outputs quality metrics of each of the sequence reads, which allows us to determine whether to keep a sequence read, to “cut away” the extraneous parts of a sequence (using cutadapt), or to leave out the read altogether. The metrics (shown as graphs and tables) include “Per sequence quality scores”, which indicates the average quality of reads over the sequences of an SRA run, “Sequence length distribution”, the distribution of sequence lengths, and an important factor, “Overrepresented sequences”, which are sequences that are not found to be in the human genome, among other measurements. Specifically for overrepresented sequences, FastQC marks these as “overrepresented” because it cannot find the source of the sequences; however, more often than not, they are adapters that have been “tacked on” during the library preparation of the sequences, and are then caught by FastQC. This is where we would use the cutadapt tool to cut out those unnecessary sections, or just completely leave the reads out of the analysis. In the end, by combining all these factors, our decision to keep or leave out sequence reads follows the ERCC (External RNA Controls Consortium) Quality Control Standards. These standards for our data (which is specifically an exRNA-seq dataset) were drawn up at a Washington, DC conference in November 2015 in order to have a universal set of quality check guidelines [8]: 
+FastQC [16] is a tool that is used in checking the quality of raw sequencing data before performing large-scale analysis. The software tool calculates and outputs quality metrics of each of the sequence reads, which allows us to determine whether to keep a sequence read, to “cut away” the extraneous parts of a sequence (using cutadapt), or to leave out the read altogether. The metrics (shown as graphs and tables) include “Per sequence quality scores”, which indicates the average quality of reads over the sequences of an SRA run, “Sequence length distribution”, the distribution of sequence lengths, and an important factor, “Overrepresented sequences”, which are sequences that are not found to be in the human genome, among other measurements. Specifically for overrepresented sequences, FastQC marks these as “overrepresented” because it cannot find the source of the sequences; however, more often than not, they are adapters that have been “tacked on” during the library preparation of the sequences, and are then caught by FastQC. This is where we would use the cutadapt tool to cut out those unnecessary sections, or just completely leave the reads out of the analysis. In the end, by combining all these factors, our decision to keep or leave out sequence reads follows the ERCC (External RNA Controls Consortium) Quality Control Standards. These standards for our data (which is specifically an exRNA-seq dataset) were drawn up at a Washington, DC conference in November 2015 in order to have a universal set of quality check guidelines [17]: 
     
 1. An individual RNA-Seq dataset is required to have a minimum of 100,000 reads that overlap (sense or antisense) with any annotated RNA transcript in the host genome. The annotation includes all small RNAs, such as miRNAs (from miRBase), piRNAs, tRNAs, snoRNAs, and circular RNAs, as well as long transcripts from GENCODE, which includes both protein coding genes and long non-coding RNAs (lncRNAs).
     
 2. The fraction of reads that align to the host genome (after filtering out contaminants, adaptor dimers and ribosomal reads) that also align to any annotated RNA transcript (described in point #1) should be greater than 0.5.
 </details>
 
-## Results
+## Visualizations
 
 Below is a Spearman correlation plot of the differential expression results of the different disorders compared among themselves for the two biofluid regions (CSF, serum). Differential expression is measured by the value of the log fold change, which is calculated by DESeq2. DESeq2 quantifies the difference in gene expression between the disorder and control group for each comparison. As we can see in the image, the differentially expressed genes are very similar between the two diseases in their respective biofluids, based on the large and heavily red circles in the plot. However, they do not show as much similarity between the two biofluids. 
 ![spearman correlation plot](img/corrmatrix.png)
@@ -135,7 +136,42 @@ The single volcano plot below is a specific look at the volcano plot for Alzheim
 Shown below is the Venn diagram we created that shows the differentially expressed miRNA that were common to both Alzheimer's and Parkinson's patients. Finding these overlapping miRNA is one of the core objectives of our project, and can lead to exploration of how these miRNA lead to mental health problems, as well as shared treatments that can target the causes of both Alzheimer's and Parkinson's patients.
 ![volcano plot of Alz/serum](img/venn.png)
 
+## Results: Mappings
+
+
 ## References
 
-WIP
+[1] Burgos, Kasandra, et al. “Profiles of Extracellular MiRNA in Cerebrospinal Fluid and Serum from Patients with Alzheimer's and Parkinson's Diseases Correlate with Disease Status and Features of Pathology.” PLOS One, vol. 9, no. 5, 5 May 2014, doi:10.1371/journal.pone.0094839. 
+
+[2] Charlotte Hewel, et al. “Common MiRNA Patterns of Alzheimer’s Disease and Parkinson’s Disease and Their Putative Impact on Commensal Gut Microbiota.” Frontiers in Neuroscience, 5 Mar. 2019, doi:10.3389/fnins.2019.00113. 
+
+[3] Mayo Clinic Staff. “Alzheimer's Disease.” Mayo Clinic, Mayo Foundation for Medical Education and Research, 29 Dec. 2020, www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447. 
+
+[4] Mayo Clinic Staff. “Parkinson's Disease.” Mayo Clinic, Mayo Foundation for Medical Education and Research, 8 Dec. 2020, www.mayoclinic.org/diseases-conditions/parkinsons-disease/symptoms-causes/syc-20376055. 
+
+[5] O'Brien, Jacob, et al. “Overview of MicroRNA Biogenesis, Mechanisms of Actions, and Circulation.” Frontiers in Endocrinology, 3 Aug. 2018, doi:10.3389/fendo.2018.00402. 
+
+[6] “Cerebrospinal Fluid (CSF).” National Multiple Sclerosis Society, www.nationalmssociety.org/Symptoms-Diagnosis/Diagnosing-Tools/Cerebrospinal-Fluid-(CSF). 
+
+[7] Kopkova, Alena et al. “MicroRNA Isolation and Quantification in Cerebrospinal Fluid: A Comparative Methodical Study.” PLOS One, vol. 13, no. 12, 7 Dec. 2018, doi:10.1371/journal.pone.0208580. 
+
+[8] Flournoy, Blake. “What Is Serum?” Sciencing, 21 Jan. 2020, sciencing.com/what-is-serum-4673561.html. 
+
+[9] “Analysis of Circulating MiRNA in Plasma or Serum.” 3D-Gene, www.3d-gene.com/en/products/dna/dna_004.html#: 
+
+[10] Smith, Yolanda. “Alzheimer's Tangles and Plaques: What's the Difference?” News - Medical, Life Sciences, 26 Feb. 2019, www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx. 
+
+[11] Burke, Robert E, et al. “A Critical Evaluation of The Braak Staging Scheme for Parkinson’s Disease.” Ann Neurol, vol. 64, no. 5, 1 Nov. 2009, doi:10.1002/ana.21541. 
+
+[12] “What Is Lewy Body Dementia?” National Institute on Aging, U.S. Department of Health and Human Services, www.nia.nih.gov/health/what-lewy-body-dementia. 
+
+[13] Hack, Nawaz, et al. "Substantia nigra depigmentation and exposure to encephalitis lethargica." Ann Neurol, vol. 76, no. 6, 1 Dec. 2013, doi:10.1002/ana.23697.
+
+[14] Bennett DA, et al. "Neuropathology of older persons without cognitive impairment from two community-based studies". Neurology, vol. 66, no. 12, 27 Jun 2006, doi: 10.1212/01.wnl.0000219668.47116.e6.
+
+[15] Martin, Marcel. “Cutadapt Removes Adapter Sequences from High-Throughput Sequencing Reads.” EMBnet.journal, journal.embnet.org/index.php/embnetjournal/article/view/200/479. 
+
+[16] Babraham Bioinformatics - FastQC A Quality Control Tool for High Throughput Sequence Data, www.bioinformatics.babraham.ac.uk/projects/fastqc/. 
+
+[17] “Data Quality Control Standards.” ExRNA Research Portal, exrna.org/resources/data/data-quality-control-standards/. 
 
