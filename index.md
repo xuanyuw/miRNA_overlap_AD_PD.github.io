@@ -222,6 +222,6 @@ We hope that these significant proteins that we found as genetically overlapped 
 
 [20] Upadhyay, Aaradhita, et al. "Neurocalcin Delta Knockout Impairs Adult Neurogenesis Whereas Half Reduction Is Not Pathological". Frontiers in Molecular Neuroscience, vol. 12, no. 19, 12 Feb. 2019, doi: 10.3389/fnmol.2019.00019.
 
-[21] "BDNF gene." MedlinePlus, https://medlineplus.gov/genetics/gene/bdnf/#
+[21] "BDNF gene." MedlinePlus, https://medlineplus.gov/genetics/gene/bdnf/
 
 [22] Seroogy, Kim B, et al. "Neuregulins". Handbook of Biologically Active Peptides (Second Edition), 2013. 
