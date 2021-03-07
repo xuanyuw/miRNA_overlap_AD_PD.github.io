@@ -198,7 +198,7 @@ We hope that these significant proteins that we found as genetically overlapped 
 
 [8] Flournoy, Blake. “What Is Serum?” Sciencing, 21 Jan. 2020, sciencing.com/what-is-serum-4673561.html. 
 
-[9] “Analysis of Circulating MiRNA in Plasma or Serum.” 3D-Gene, www.3d-gene.com/en/products/dna/dna_004.html#: 
+[9] “Analysis of Circulating MiRNA in Plasma or Serum.” 3D-Gene, www.3d-gene.com/en/products/dna/dna_004.html 
 
 [10] Smith, Yolanda. “Alzheimer's Tangles and Plaques: What's the Difference?” Medical News, 26 Feb. 2019, www.news-medical.net/health/Alzheimers-tangles-and-plaques-whats-the-difference.aspx. 
 
@@ -222,6 +222,6 @@ We hope that these significant proteins that we found as genetically overlapped 
 
 [20] Upadhyay, Aaradhita, et al. "Neurocalcin Delta Knockout Impairs Adult Neurogenesis Whereas Half Reduction Is Not Pathological". Frontiers in Molecular Neuroscience, vol. 12, no. 19, 12 Feb. 2019, doi: 10.3389/fnmol.2019.00019.
 
-[21] "BDNF gene." MedlinePlus, https://medlineplus.gov/genetics/gene/bdnf/#:.
+[21] "BDNF gene." MedlinePlus, https://medlineplus.gov/genetics/gene/bdnf/#
 
 [22] Seroogy, Kim B, et al. "Neuregulins". Handbook of Biologically Active Peptides (Second Edition), 2013. 
